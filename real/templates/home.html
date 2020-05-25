@@ -1,0 +1,32 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<section class="showcase">
+			<h2>WE CARE YOUR MONEY</h2>
+			<p></p>
+			<a href="{% url 'product_view' %}">
+				<button class="btn btn-success" type="submit" >Explor now!</button></a>
+		</section>
+		<div class="SERVECES"><h2>OUR SERVICES</h2></div>
+		<section class="maincards">
+			<div class="box">
+				<img class="pic" src="{% static 'images/service1.jpg' %}">
+				<h2>SERVICE 1</h2>
+				<p>about section</p>
+				<a href="#">learn more ></a>
+			</div>
+			<div class="box">
+				<img class="pic" src="{% static 'images/service2.jpg' %}">
+				<h2>SERVICE 2</h2>
+				<p>about</p>
+				<a href="#">Learn more ></a>
+			</div>
+			<div class="box">
+				<img class="pic" src="{% static 'images/service3.png' %}">
+				<h2>SERVICES 3</h2>
+				<p>about</p>
+				<a href="#">Learn more ></a>
+			</div>
+
+		</section>
+{% endblock %}
